@@ -1,15 +1,24 @@
 package net.cursedwarrior.cursedcraft.Item.custom;
 
 
+import net.cursedwarrior.cursedcraft.block.ModBlocks;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 
 public class SteelDowsingRodItem extends Item {
@@ -35,7 +44,7 @@ public class SteelDowsingRodItem extends Item {
             }
 
             if(!foundBlock) {
-                player.sendMessage(new TranslatableComponent("item.tutorialmod.dowsing_rod.no_valuables"),
+                player.sendMessage(new TranslatableComponent("item.cursedcraft.steel_dowsing_rod.no_valuables"),
                         player.getUUID());
             }
         }
@@ -46,6 +55,14 @@ public class SteelDowsingRodItem extends Item {
         return super.useOn(pContext);
     }
 
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipcomponents, TooltipFlag pIsAdvanced) {
+        if(Screen.hasShiftDown()) {
+            pTooltipcomponents.add(new TranslatableComponent("tooltip.cursedcraft.steel.drowsing.rod.tooltip.shift"));
+        } else {
+
+        }
+    }
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockBelow) {
         player.sendMessage(new TextComponent("Found " + blockBelow.asItem().getRegistryName().toString() + " at " +
@@ -54,7 +71,10 @@ public class SteelDowsingRodItem extends Item {
 
     private boolean isValuableBlock(Block block) {
         return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
+                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE
+                || block == Blocks.GOLD_ORE || block == Blocks.REDSTONE_ORE
+                || block == Blocks.LAPIS_ORE || block == ModBlocks.STEEL_ORE.get();
+
     }
 
 }

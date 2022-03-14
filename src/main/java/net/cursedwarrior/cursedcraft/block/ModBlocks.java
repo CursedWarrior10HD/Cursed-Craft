@@ -3,6 +3,7 @@ package net.cursedwarrior.cursedcraft.block;
 import net.cursedwarrior.cursedcraft.CursedCraft;
 import net.cursedwarrior.cursedcraft.Item.ModCreativeModeTab;
 import net.cursedwarrior.cursedcraft.Item.ModItems;
+import net.cursedwarrior.cursedcraft.block.custom.SpeedySteelBlockBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -29,6 +30,9 @@ public class ModBlocks {
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
     public static final RegistryObject<Block> DEEPSLATE_STEEL_ORE = registerBlock("deepslate_steel_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> SPEEDY_STEEL_BLOCK = registerBlock("speedy_steel_block",
+            () -> new SpeedySteelBlockBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
 
 

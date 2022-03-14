@@ -1,0 +1,18 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "up": "cursedcraft:block/speedy_steel_block_top",
+    "down": "cursedcraft:block/speedy_steel_block_top",
+    "north": "cursedcraft:block/speedy_steel_block_side",
+    "east": "cursedcraft:block/speedy_steel_block_side",
+    "south": "cursedcraft:block/speedy_steel_block_side",
+    "west": "cursedcraft:block/speedy_steel_block_side",
+    "particle": "cursedcraft:block/speedy_steel_block_side"
+
+
+
+
+
+
+  }
+}

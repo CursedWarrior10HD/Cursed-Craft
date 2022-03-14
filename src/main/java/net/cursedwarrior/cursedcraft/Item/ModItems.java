@@ -1,9 +1,11 @@
 package net.cursedwarrior.cursedcraft.Item;
 
 import net.cursedwarrior.cursedcraft.CursedCraft;
+import net.cursedwarrior.cursedcraft.Item.custom.CoalChunkItem;
 import net.cursedwarrior.cursedcraft.Item.custom.SteelDowsingRodItem;
 import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ShearsItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -23,10 +25,19 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
 
     public static final RegistryObject<Item> STEEL_DOWSING_ROD = ITEMS.register("steel_dowsing_rod",
-            () -> new SteelDowsingRodItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(16)));
+            () -> new SteelDowsingRodItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(32)));
 
+    public static final RegistryObject<Item> STEEL_SHEARS = ITEMS.register("steel_shears",
+            () -> new ShearsItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(1280)));
 
+    public static final RegistryObject<Item> FLINT_AND_IRON = ITEMS.register("flint_and_iron",
+            () -> new FlintAndSteelItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(32)));
 
+    public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).food(ModFoods.TOMATO)));
+
+    public static final RegistryObject<Item> COAL_CHUNK = ITEMS.register("coal_chunk",
+            () -> new CoalChunkItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
