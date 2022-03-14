@@ -60,6 +60,7 @@ public class SteelDowsingRodItem extends Item {
         if(Screen.hasShiftDown()) {
             pTooltipcomponents.add(new TranslatableComponent("tooltip.cursedcraft.steel.drowsing.rod.tooltip.shift"));
         } else {
+            pTooltipcomponents.add(new TranslatableComponent("tooltip.cursedcraft.steel.drowsing.rod.tooltip"));
 
         }
     }

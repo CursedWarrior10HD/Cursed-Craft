@@ -14,8 +14,11 @@
   "block.cursedcraft.steel_ore": "Steel Ore",
   "block.cursedcraft.deepslate_steel_ore": "Deepslate Steel Ore",
   "block.cursedcraft.speedy_steel_block": "Speedy Steel Block",
+  "tooltip.cursedcraft.block.speedy.steel.block": "Gives Speed!",
 
-  "item.cursedcraft.steel_dowsing_rod.no_valuables": "No Valuable Found!"
+  "item.cursedcraft.steel_dowsing_rod.no_valuables": "No Valuable Found!",
+  "tooltip.cursedcraft.steel.drowsing.rod.tooltip.shift": "Right-Click to find Valuables",
+  "tooltip.cursedcraft.steel.drowsing.rod.tooltip": "Press §eSHIFT§r for more Information"
 
 
 }
