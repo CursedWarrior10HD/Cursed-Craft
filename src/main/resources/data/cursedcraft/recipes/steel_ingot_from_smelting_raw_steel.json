@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "group": "steel_ingot",
   "ingredient": {
-    "item": "cursedcraft:steel_copper"
+    "item": "cursedcraft:raw_steel"
   },
   "result": "cursedcraft:steel_ingot",
   "experience": 0.7,

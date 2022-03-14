@@ -1,6 +1,8 @@
 package net.cursedwarrior.cursedcraft.Item;
 
 import net.cursedwarrior.cursedcraft.CursedCraft;
+import net.cursedwarrior.cursedcraft.Item.custom.SteelDowsingRodItem;
+import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +21,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+
+    public static final RegistryObject<Item> STEEL_DOWSING_ROD = ITEMS.register("steel_dowsing_rod",
+            () -> new SteelDowsingRodItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(16)));
 
 
 

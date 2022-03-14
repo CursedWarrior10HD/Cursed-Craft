@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " A ",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "cursedcraft:steel_ingot"
+    },
+    "A": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "cursedcraft:steel_dowsing_rod"
+  }
+}
