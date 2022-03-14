@@ -23,13 +23,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+                    .strength(0.15f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
     public static final RegistryObject<Block> STEEL_ORE = registerBlock("steel_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(0.15f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+                    .strength(0.1f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
     public static final RegistryObject<Block> DEEPSLATE_STEEL_ORE = registerBlock("deepslate_steel_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE)
-                    .strength(0.225f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+                    .strength(0.15f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
 
 
 

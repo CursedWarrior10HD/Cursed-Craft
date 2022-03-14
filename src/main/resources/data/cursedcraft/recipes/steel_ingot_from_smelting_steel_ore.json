@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "steel_ingot",
+  "ingredient": {
+    "item": "cursedcraft:steel_ore"
+  },
+  "result": "cursedcraft:steel_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

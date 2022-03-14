@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "steel_ingot",
+  "ingredient": {
+    "item": "cursedcraft:raw_steel"
+  },
+  "result": "cursedcraft:steel_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}
