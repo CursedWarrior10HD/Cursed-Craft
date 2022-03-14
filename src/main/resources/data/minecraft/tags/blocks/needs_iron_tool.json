@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+
+    "cursedcraft:steel_ore",
+    "cursedcraft:deepslate_steel_ore",
+    "cursedcraft:steel_block"
+  ]
+}
