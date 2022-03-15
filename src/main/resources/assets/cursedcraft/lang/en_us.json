@@ -7,14 +7,19 @@
   "item.cursedcraft.steel_dowsing_rod": "Steel Dowsing Rod",
   "item.cursedcraft.steel_shears": "Steel Shears",
   "item.cursedcraft.flint_and_iron": "Flint and Iron",
-  "item.cursedcraft.tomato": "tomato",
+  "item.cursedcraft.tomato": "Tomato",
   "item.cursedcraft.coal_chunk": "Coal Chunk",
+  "item.cursedcraft.fools_gold": "Fool's Gold",
 
   "block.cursedcraft.steel_block": "Steel Block",
   "block.cursedcraft.steel_ore": "Steel Ore",
   "block.cursedcraft.deepslate_steel_ore": "Deepslate Steel Ore",
+  "block.cursedcraft.cursed_planks": "Cursed Planks",
   "block.cursedcraft.speedy_steel_block": "Speedy Steel Block",
   "tooltip.cursedcraft.block.speedy.steel.block": "Gives Speed!",
+
+  "item.cursedcraft.steel_horse_armor": "Steel Horse Armor",
+
 
   "item.cursedcraft.steel_dowsing_rod.no_valuables": "No Valuable Found!",
   "tooltip.cursedcraft.steel.drowsing.rod.tooltip.shift": "Right-Click to find Valuables",

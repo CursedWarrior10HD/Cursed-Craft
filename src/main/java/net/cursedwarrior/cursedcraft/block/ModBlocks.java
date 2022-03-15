@@ -26,19 +26,23 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, CursedCraft.MOD_ID);
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
 
     public static final RegistryObject<Block> STEEL_ORE = registerBlock("steel_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE)
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
 
     public static final RegistryObject<Block> DEEPSLATE_STEEL_ORE = registerBlock("deepslate_steel_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
 
+    public static final RegistryObject<Block> CURSED_PLANKS = registerBlock("cursed_planks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+
     public static final RegistryObject<Block> SPEEDY_STEEL_BLOCK = registerBlock("speedy_steel_block",
-            () -> new SpeedySteelBlockBlock(BlockBehaviour.Properties.of(Material.METAL)
+            () -> new SpeedySteelBlockBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT, "tooltip.cursedcraft.block.speedy.steel.block");
 
 

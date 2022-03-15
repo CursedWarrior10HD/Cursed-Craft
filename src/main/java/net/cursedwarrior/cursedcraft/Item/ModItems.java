@@ -2,10 +2,9 @@ package net.cursedwarrior.cursedcraft.Item;
 
 import net.cursedwarrior.cursedcraft.CursedCraft;
 import net.cursedwarrior.cursedcraft.Item.custom.CoalChunkItem;
+import net.cursedwarrior.cursedcraft.Item.custom.FoolsGoldItem;
 import net.cursedwarrior.cursedcraft.Item.custom.SteelDowsingRodItem;
-import net.minecraft.world.item.FlintAndSteelItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ShearsItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -38,6 +37,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> COAL_CHUNK = ITEMS.register("coal_chunk",
             () -> new CoalChunkItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+
+    public static final RegistryObject<Item> FOOLS_GOLD = ITEMS.register("fools_gold",
+            () -> new FoolsGoldItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).rarity(Rarity.UNCOMMON)));
+
+    public static final RegistryObject<Item> STEEL_HORSE_ARMOR = ITEMS.register("steel_horse_armor",
+            () -> new HorseArmorItem(16, "steel",
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
