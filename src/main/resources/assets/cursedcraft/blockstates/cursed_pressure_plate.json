@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "cursedcraft:block/cursed_pressure_plate"
+    },
+    "powered=true": {
+      "model": "cursedcraft:block/cursed_pressure_plate_down"
+    }
+  }
+}

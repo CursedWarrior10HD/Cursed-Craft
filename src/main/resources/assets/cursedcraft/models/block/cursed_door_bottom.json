@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "cursedcraft:block/cursed_door_top",
+    "bottom": "cursedcraft:block/cursed_door_bottom"
+  }
+}

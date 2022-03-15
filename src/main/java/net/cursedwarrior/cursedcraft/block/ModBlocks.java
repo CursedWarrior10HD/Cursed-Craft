@@ -53,6 +53,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> CURSED_FENCE_GATE = registerBlock("cursed_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
                     .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> CURSED_BUTTON = registerBlock("cursed_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> CURSED_PRESSURE_PLATE = registerBlock("cursed_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> CURSED_DOOR = registerBlock("cursed_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> CURSED_TRAPDOOR = registerBlock("cursed_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.Cursed_CRAFT);
+
 
     public static final RegistryObject<Block> SPEEDY_STEEL_BLOCK = registerBlock("speedy_steel_block",
             () -> new SpeedySteelBlockBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)
