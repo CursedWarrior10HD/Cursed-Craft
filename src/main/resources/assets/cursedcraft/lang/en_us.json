@@ -15,6 +15,11 @@
   "block.cursedcraft.steel_ore": "Steel Ore",
   "block.cursedcraft.deepslate_steel_ore": "Deepslate Steel Ore",
   "block.cursedcraft.cursed_planks": "Cursed Planks",
+  "block.cursedcraft.cursed_stairs": "Cursed Stairs",
+  "block.cursedcraft.cursed_slab": "Cursed Slab",
+  "block.cursedcraft.cursed_fence": "Cursed Fence",
+  "block.cursedcraft.cursed_fence_gate": "Cursed Fence Gate",
+
   "block.cursedcraft.speedy_steel_block": "Speedy Steel Block",
   "tooltip.cursedcraft.block.speedy.steel.block": "Gives Speed!",
 

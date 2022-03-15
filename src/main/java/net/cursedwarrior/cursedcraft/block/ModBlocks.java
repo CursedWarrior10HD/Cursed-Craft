@@ -8,8 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -39,6 +38,20 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CURSED_PLANKS = registerBlock("cursed_planks",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+
+    public static final RegistryObject<Block> CURSED_STAIRS = registerBlock("cursed_stairs",
+            () -> new StairBlock(() -> ModBlocks.CURSED_PLANKS.get().defaultBlockState()
+                    ,BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> CURSED_SLAB = registerBlock("cursed_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> CURSED_FENCE = registerBlock("cursed_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> CURSED_FENCE_GATE = registerBlock("cursed_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
                     .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
 
     public static final RegistryObject<Block> SPEEDY_STEEL_BLOCK = registerBlock("speedy_steel_block",

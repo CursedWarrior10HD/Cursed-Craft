@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "cursedcraft:block/cursed_planks"
+  }
+}

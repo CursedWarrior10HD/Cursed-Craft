@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cursedcraft:block/cursed_slab"
+    },
+    "type=double": {
+      "model": "cursedcraft:block/cursed_planks"
+    },
+    "type=top": {
+      "model": "cursedcraft:block/cursed_slab_top"
+    }
+  }
+}
