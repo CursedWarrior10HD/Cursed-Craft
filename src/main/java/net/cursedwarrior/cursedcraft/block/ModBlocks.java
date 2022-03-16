@@ -61,10 +61,10 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
     public static final RegistryObject<Block> CURSED_DOOR = registerBlock("cursed_door",
             () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
-                    .strength(2f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.Cursed_CRAFT);
+                    .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.Cursed_CRAFT);
     public static final RegistryObject<Block> CURSED_TRAPDOOR = registerBlock("cursed_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
-                    .strength(2f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.Cursed_CRAFT);
+                    .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.Cursed_CRAFT);
 
 
     public static final RegistryObject<Block> SPEEDY_STEEL_BLOCK = registerBlock("speedy_steel_block",

@@ -1,10 +1,8 @@
 package net.cursedwarrior.cursedcraft.Item;
 
 import net.cursedwarrior.cursedcraft.CursedCraft;
-import net.cursedwarrior.cursedcraft.Item.custom.CoalChunkItem;
-import net.cursedwarrior.cursedcraft.Item.custom.FoolsGoldItem;
-import net.cursedwarrior.cursedcraft.Item.custom.PoisonSwordItem;
-import net.cursedwarrior.cursedcraft.Item.custom.SteelDowsingRodItem;
+import net.cursedwarrior.cursedcraft.Item.custom.*;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -42,8 +40,42 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
             () -> new HoeItem(ModTiers.STEEL, 0,0f,
                     new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+
     public static final RegistryObject<Item> STEEL_BOW = ITEMS.register("steel_bow",
             () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(512)));
+
+    public static final RegistryObject<Item> STEEL_FISHING_ROD = ITEMS.register("steel_fishing_rod",
+            () -> new FishingRodItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(512)));
+
+
+    public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+    public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+    public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+    public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+
+    public static final RegistryObject<Item> STEEL_ELYTRA = ITEMS.register("steel_elytra",
+            () -> new ElytraItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(512)));
+
+    public static final RegistryObject<Item> FIERY_STEEL_HELMET = ITEMS.register("fiery_steel_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.FIERY_STEEL, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+    public static final RegistryObject<Item> FIERY_STEEL_CHESTPLATE = ITEMS.register("fiery_steel_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.FIERY_STEEL, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+    public static final RegistryObject<Item> FIERY_STEEL_LEGGINGS = ITEMS.register("fiery_steel_leggings",
+            () -> new ArmorItem(ModArmorMaterials.FIERY_STEEL, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+    public static final RegistryObject<Item> FIERY_STEEL_BOOTS = ITEMS.register("fiery_steel_boots",
+            () -> new ArmorItem(ModArmorMaterials.FIERY_STEEL, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
 
     public static final RegistryObject<Item> STEEL_DOWSING_ROD = ITEMS.register("steel_dowsing_rod",
             () -> new SteelDowsingRodItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(32)));

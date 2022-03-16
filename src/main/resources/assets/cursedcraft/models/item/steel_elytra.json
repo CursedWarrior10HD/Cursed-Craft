@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "cursedcraft:item/steel_elytra"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "broken": 1
+            },
+            "model": "cursedcraft:item/steel_broken_elytra"
+        }
+    ]
+}
