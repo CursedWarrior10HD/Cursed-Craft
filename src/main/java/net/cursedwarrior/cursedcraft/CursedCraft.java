@@ -4,6 +4,7 @@ package net.cursedwarrior.cursedcraft;
 import com.mojang.logging.LogUtils;
 import net.cursedwarrior.cursedcraft.Item.ModItems;
 import net.cursedwarrior.cursedcraft.block.ModBlocks;
+import net.cursedwarrior.cursedcraft.painting.ModPaintings;
 import net.cursedwarrior.cursedcraft.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -29,6 +30,8 @@ public class CursedCraft {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModPaintings.register(eventBus);
+
 
 
         eventBus.addListener(this::setup);
