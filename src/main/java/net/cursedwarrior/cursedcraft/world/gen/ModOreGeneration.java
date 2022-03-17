@@ -15,4 +15,5 @@ public class ModOreGeneration {
 
         base.add(ModPlacedFeatures.STEEL_ORE_PLACED);
     }
+
 }
