@@ -22,6 +22,9 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
 
+    public static final RegistryObject<Item> STEEL_DUST = ITEMS.register("steel_dust",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
             () -> new SwordItem(ModTiers.STEEL, 2,1f,
                     new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
