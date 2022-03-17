@@ -13,6 +13,7 @@
   "item.cursedcraft.steel_shovel": "Steel Shovel",
   "item.cursedcraft.steel_hoe": "Steel Hoe",
   "item.cursedcraft.steel_bow": "Steel Bow",
+  "item.cursedcraft.steel_crossbow": "Steel Crossbow",
   "item.cursedcraft.steel_fishing_rod": "Steel Fishing Rod",
   "item.cursedcraft.steel_helmet": "Steel Helmet",
   "item.cursedcraft.steel_chestplate": "Steel Chestplate",
@@ -42,6 +43,10 @@
   "block.cursedcraft.cursed_pressure_plate": "Cursed Pressure Plate",
   "block.cursedcraft.cursed_door": "Cursed Door",
   "block.cursedcraft.cursed_trapdoor": "Cursed Trapdoor",
+
+  "block.cursedcraft.yellow_rose": "Yellow Rose",
+  "block.cursedcraft.potted_yellow_rose": "Potted Yellow Rose",
+
 
   "block.cursedcraft.speedy_steel_block": "Speedy Steel Block",
   "tooltip.cursedcraft.block.speedy.steel.block": "Gives Speed!",

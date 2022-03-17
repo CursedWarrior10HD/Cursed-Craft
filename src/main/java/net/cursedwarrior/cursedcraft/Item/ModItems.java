@@ -43,6 +43,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> STEEL_BOW = ITEMS.register("steel_bow",
             () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(512)));
+    public static final RegistryObject<Item> STEEL_CROSSBOW = ITEMS.register("steel_crossbow",
+            () -> new CrossbowItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(512)));
 
     public static final RegistryObject<Item> STEEL_FISHING_ROD = ITEMS.register("steel_fishing_rod",
             () -> new FishingRodItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(512)));

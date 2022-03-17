@@ -6,6 +6,8 @@ import net.cursedwarrior.cursedcraft.Item.ModItems;
 import net.cursedwarrior.cursedcraft.block.custom.SpeedySteelBlockBlock;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -66,10 +68,23 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
                     .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.Cursed_CRAFT);
 
+    public static final RegistryObject<Block> YELLOW_ROSE = registerBlock("yellow_rose",
+            () -> new FlowerBlock(MobEffects.DIG_SPEED, 8,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()), ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> POTTED_YELLOW_ROSE = registerBlockWithotBlockItem("potted_yellow_rose",
+            () -> new FlowerPotBlock(null, ModBlocks.YELLOW_ROSE,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithotBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
+
 
     public static final RegistryObject<Block> SPEEDY_STEEL_BLOCK = registerBlock("speedy_steel_block",
             () -> new SpeedySteelBlockBlock(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT, "tooltip.cursedcraft.block.speedy.steel.block");
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT, "tooltip.cursedcraft.block.speedy.steel.block");
 
 
 

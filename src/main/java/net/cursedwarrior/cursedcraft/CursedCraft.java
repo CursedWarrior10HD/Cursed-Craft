@@ -8,6 +8,7 @@ import net.cursedwarrior.cursedcraft.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -39,12 +40,18 @@ public class CursedCraft {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CURSED_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CURSED_TRAPDOOR.get(), RenderType.cutout());
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_ROSE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_YELLOW_ROSE.get(), RenderType.cutout());
+
+
         ModItemProperties.addCustomItemProperties();
 
 
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.YELLOW_ROSE.getId(), ModBlocks.POTTED_YELLOW_ROSE);
+        });
     }
 }
