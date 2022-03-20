@@ -35,6 +35,22 @@ public class ModConfiguredFeatures {
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> STEEL_ORE = FeatureUtils.register("steel_ore",
             Feature.ORE, new OreConfiguration(OVERWORLD_STEEL_ORES, 9));
 
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> CURSED_TREE =
+            FeatureUtils.register("cursed", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(ModBlocks.CURSED_LOG.get()),
+                    new StraightTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.simple(ModBlocks.CURSED_LEAVES.get()),
+                    new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2)).build());
+
+    public static final Holder<PlacedFeature> CURSED_CHECKED = PlacementUtils.register("cursed_checked", CURSED_TREE,
+            PlacementUtils.filteredByBlockSurvival(ModBlocks.CURSED_SAPLING.get()));
+
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> CURSED_SPAWN =
+            FeatureUtils.register("cursed_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(CURSED_CHECKED,
+                            0.5F)), CURSED_CHECKED));
+
 
 
 }

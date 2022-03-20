@@ -43,7 +43,10 @@ public class CursedCraft {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CURSED_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CURSED_TRAPDOOR.get(), RenderType.cutout());
 
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_ROSE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CURSED_LEAVES.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CURSED_SAPLING.get(), RenderType.cutoutMipped());
+
+
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_YELLOW_ROSE.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_GLASS.get(), RenderType.translucent());

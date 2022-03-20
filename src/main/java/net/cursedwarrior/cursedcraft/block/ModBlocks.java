@@ -6,6 +6,7 @@ import net.cursedwarrior.cursedcraft.Item.ModItems;
 import net.cursedwarrior.cursedcraft.block.custom.ModFlammableRotatedPillarBlock;
 import net.cursedwarrior.cursedcraft.block.custom.SpeedySteelBlockBlock;
 import net.cursedwarrior.cursedcraft.block.custom.TomatoPlantBlock;
+import net.cursedwarrior.cursedcraft.world.feature.tree.CursedTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -96,6 +97,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> STRIPPED_CURSED_WOOD = registerBlock("stripped_cursed_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
             ModCreativeModeTab.Cursed_CRAFT);
+
+    public static final RegistryObject<Block> CURSED_LEAVES = registerBlock("cursed_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return 30;
+                }
+            }, ModCreativeModeTab.Cursed_CRAFT);
+
+
+    public static final RegistryObject<Block> CURSED_SAPLING = registerBlock("cursed_sapling",
+            () -> new SaplingBlock(new CursedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.Cursed_CRAFT);
+
+
 
 
     public static final RegistryObject<Block> CURSED_PLANKS = registerBlock("cursed_planks",

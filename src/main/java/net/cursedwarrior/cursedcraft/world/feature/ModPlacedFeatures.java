@@ -19,6 +19,10 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.STEEL_ORE, ModOrePlacement.commonOrePlacement(30, // VeinsPerChunk
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.belowTop(56))));
 
+    public static final Holder<PlacedFeature> CURSED_PLACED = PlacementUtils.register("cursed_placed",
+            ModConfiguredFeatures.CURSED_SPAWN, VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(3, 0.1f, 2)));
+
 
 
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "cursedcraft:block/cursed_leaves"
+  }
+}

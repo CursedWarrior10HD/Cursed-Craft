@@ -56,6 +56,10 @@
   "block.cursedcraft.potted_yellow_rose": "Potted Yellow Rose",
   "block.cursedcraft.tomato_plant": "Tomato Plant",
 
+  "block.cursedcraft.cursed_leaves": "Cursed Leaves",
+  "block.cursedcraft.cursed_sapling": "Cursed Sapling",
+
+
 
 
   "block.cursedcraft.speedy_steel_block": "Speedy Steel Block",
@@ -66,7 +70,7 @@
 
   "item.cursedcraft.steel_dowsing_rod.no_valuables": "No Valuable Found!",
   "tooltip.cursedcraft.steel.drowsing.rod.tooltip.shift": "Right-Click to find Valuables",
-  "tooltip.cursedcraft.steel.drowsing.rod.tooltip": "Press §eSHIFT§r for more Information",
+  "tooltip.cursedcraft.steel.drowsing.rod.tooltip": "Press §eSHIFT§r for more Information"
 
 
 }
