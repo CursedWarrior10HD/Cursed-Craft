@@ -16,6 +16,8 @@ import java.util.List;
 
 @Mod.EventBusSubscriber(modid = CursedCraft.MOD_ID)
 public class ModEvents {
+
+
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
         if(event.getType() == VillagerProfession.FARMER) {

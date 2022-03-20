@@ -12,6 +12,7 @@ public class ModItemProperties {
     makeFishingRod(ModItems.STEEL_FISHING_ROD.get());
     makeElytra(ModItems.STEEL_ELYTRA.get());
     makeCrossBow(ModItems.STEEL_CROSSBOW.get());
+    makeShield(ModItems.STEEL_SHIELD.get());
     }
 
     private static void makeSteelBow(Item Item) {
@@ -82,6 +83,14 @@ public class ModItemProperties {
         });
         ItemProperties.register(Item, new ResourceLocation("firework"), (p_174605_, p_174606_, p_174607_, p_174608_) -> {
             return p_174607_ != null && CrossbowItem.isCharged(p_174605_) && CrossbowItem.containsChargedProjectile(p_174605_, Items.FIREWORK_ROCKET) ? 1.0F : 0.0F;
+        });
+    }
+
+
+
+    private static void makeShield(Item Item) {
+        ItemProperties.register(Items.SHIELD, new ResourceLocation("blocking"), (p_174590_, p_174591_, p_174592_, p_174593_) -> {
+            return p_174592_ != null && p_174592_.isUsingItem() && p_174592_.getUseItem() == p_174590_ ? 1.0F : 0.0F;
         });
     }
 }

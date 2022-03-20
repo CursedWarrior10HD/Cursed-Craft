@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "cursedcraft:block/tomato_stage2"
+  }
+}

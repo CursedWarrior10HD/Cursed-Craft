@@ -46,6 +46,10 @@ public class CursedCraft {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_ROSE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_YELLOW_ROSE.get(), RenderType.cutout());
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_GLASS.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.TOMATO_PLANT.get(), RenderType.cutout());
+
+
 
         ModItemProperties.addCustomItemProperties();
 

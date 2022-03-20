@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "cursedcraft:cursed_log",
+    "cursedcraft:cursed_wood",
+    "cursedcraft:stripped_cursed_log",
+    "cursedcraft:stripped_cursed_wood"
+  ]
+}

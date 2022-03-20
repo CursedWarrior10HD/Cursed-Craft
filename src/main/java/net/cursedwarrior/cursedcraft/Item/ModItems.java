@@ -2,6 +2,7 @@ package net.cursedwarrior.cursedcraft.Item;
 
 import net.cursedwarrior.cursedcraft.CursedCraft;
 import net.cursedwarrior.cursedcraft.Item.custom.*;
+import net.cursedwarrior.cursedcraft.block.ModBlocks;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -43,6 +44,9 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
             () -> new HoeItem(ModTiers.STEEL, 0,0f,
                     new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+
+    public static final RegistryObject<Item> STEEL_SHIELD = ITEMS.register("steel_shield",
+            () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(128)));
 
     public static final RegistryObject<Item> STEEL_BOW = ITEMS.register("steel_bow",
             () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT).durability(512)));
@@ -103,6 +107,13 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_HORSE_ARMOR = ITEMS.register("steel_horse_armor",
             () -> new HorseArmorItem(16, "steel",
                     new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+
+    public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TOMATO_PLANT.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.Cursed_CRAFT)));
+
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cursedcraft:block/cursed_log",
+    "side": "cursedcraft:block/cursed_log"
+  }
+}

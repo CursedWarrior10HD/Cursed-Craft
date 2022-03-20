@@ -3,15 +3,21 @@ package net.cursedwarrior.cursedcraft.block;
 import net.cursedwarrior.cursedcraft.CursedCraft;
 import net.cursedwarrior.cursedcraft.Item.ModCreativeModeTab;
 import net.cursedwarrior.cursedcraft.Item.ModItems;
+import net.cursedwarrior.cursedcraft.block.custom.ModFlammableRotatedPillarBlock;
 import net.cursedwarrior.cursedcraft.block.custom.SpeedySteelBlockBlock;
+import net.cursedwarrior.cursedcraft.block.custom.TomatoPlantBlock;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -37,10 +43,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_STEEL_ORE = registerBlock("deepslate_steel_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
-
-    public static final RegistryObject<Block> CURSED_PLANKS = registerBlock("cursed_planks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD)
-                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.Cursed_CRAFT);
 
     public static final RegistryObject<Block> CURSED_STAIRS = registerBlock("cursed_stairs",
             () -> new StairBlock(() -> ModBlocks.CURSED_PLANKS.get().defaultBlockState()
@@ -75,7 +77,44 @@ public class ModBlocks {
             () -> new FlowerPotBlock(null, ModBlocks.YELLOW_ROSE,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
 
+    public static final RegistryObject<Block> STEEL_GLASS = registerBlock("steel_glass",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()),
+            ModCreativeModeTab.Cursed_CRAFT);
 
+    public static final RegistryObject<Block> TOMATO_PLANT = registerBlockWithotBlockItem("tomato_plant",
+            () -> new TomatoPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<Block> CURSED_LOG = registerBlock("cursed_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+            ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> CURSED_WOOD = registerBlock("cursed_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)),
+            ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> STRIPPED_CURSED_LOG = registerBlock("stripped_cursed_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
+            ModCreativeModeTab.Cursed_CRAFT);
+    public static final RegistryObject<Block> STRIPPED_CURSED_WOOD = registerBlock("stripped_cursed_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
+            ModCreativeModeTab.Cursed_CRAFT);
+
+
+    public static final RegistryObject<Block> CURSED_PLANKS = registerBlock("cursed_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+            }, ModCreativeModeTab.Cursed_CRAFT);
 
     private static <T extends Block> RegistryObject<T> registerBlockWithotBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);

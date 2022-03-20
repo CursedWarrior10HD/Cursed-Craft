@@ -14,6 +14,7 @@
   "item.cursedcraft.steel_shovel": "Steel Shovel",
   "item.cursedcraft.steel_hoe": "Steel Hoe",
   "item.cursedcraft.steel_bow": "Steel Bow",
+  "item.cursedcraft.steel_shield": "Steel Shield",
   "item.cursedcraft.steel_crossbow": "Steel Crossbow",
   "item.cursedcraft.steel_fishing_rod": "Steel Fishing Rod",
   "item.cursedcraft.steel_helmet": "Steel Helmet",
@@ -29,13 +30,19 @@
 
   "item.cursedcraft.flint_and_iron": "Flint and Iron",
   "item.cursedcraft.tomato": "Tomato",
+  "item.cursedcraft.tomato_seeds": "Tomato Seeds",
   "item.cursedcraft.coal_chunk": "Coal Chunk",
   "item.cursedcraft.fools_gold": "Fool's Gold",
 
   "block.cursedcraft.steel_block": "Steel Block",
+  "block.cursedcraft.steel_glass": "Steel Glass",
   "block.cursedcraft.steel_ore": "Steel Ore",
   "block.cursedcraft.deepslate_steel_ore": "Deepslate Steel Ore",
   "block.cursedcraft.cursed_planks": "Cursed Planks",
+  "block.cursedcraft.cursed_log": "Cursed Log",
+  "block.cursedcraft.cursed_wood": "Cursed Wood",
+  "block.cursedcraft.stripped_cursed_log": "Stripped Cursed Log",
+  "block.cursedcraft.stripped_cursed_wood": "Stripped Cursed Wood",
   "block.cursedcraft.cursed_stairs": "Cursed Stairs",
   "block.cursedcraft.cursed_slab": "Cursed Slab",
   "block.cursedcraft.cursed_fence": "Cursed Fence",
@@ -47,6 +54,8 @@
 
   "block.cursedcraft.yellow_rose": "Yellow Rose",
   "block.cursedcraft.potted_yellow_rose": "Potted Yellow Rose",
+  "block.cursedcraft.tomato_plant": "Tomato Plant",
+
 
 
   "block.cursedcraft.speedy_steel_block": "Speedy Steel Block",
@@ -57,7 +66,7 @@
 
   "item.cursedcraft.steel_dowsing_rod.no_valuables": "No Valuable Found!",
   "tooltip.cursedcraft.steel.drowsing.rod.tooltip.shift": "Right-Click to find Valuables",
-  "tooltip.cursedcraft.steel.drowsing.rod.tooltip": "Press §eSHIFT§r for more Information"
+  "tooltip.cursedcraft.steel.drowsing.rod.tooltip": "Press §eSHIFT§r for more Information",
 
 
 }
