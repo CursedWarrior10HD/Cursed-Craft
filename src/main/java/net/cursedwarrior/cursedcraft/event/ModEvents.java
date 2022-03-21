@@ -20,10 +20,6 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = CursedCraft.MOD_ID)
 public class ModEvents {
 
-    @SubscribeEvent
-    public static void registerAttributes(EntityAttributeCreationEvent event) {
-        event.put(ModEntities.HAIRY_COW.get(), HairyCow.createAttributes().build());
-    }
 
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {

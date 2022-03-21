@@ -6,6 +6,7 @@ import net.cursedwarrior.cursedcraft.Item.ModItems;
 import net.cursedwarrior.cursedcraft.block.ModBlocks;
 import net.cursedwarrior.cursedcraft.enchantments.ModEnchantments;
 import net.cursedwarrior.cursedcraft.entity.ModEntities;
+import net.cursedwarrior.cursedcraft.event.ModEvents;
 import net.cursedwarrior.cursedcraft.painting.ModPaintings;
 import net.cursedwarrior.cursedcraft.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -35,6 +36,7 @@ public class CursedCraft {
         ModPaintings.register(eventBus);
         ModEnchantments.register(eventBus);
         ModEntities.register(eventBus);
+
 
 
         eventBus.addListener(this::setup);

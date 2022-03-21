@@ -62,6 +62,8 @@ public class HairyCowModel<Type extends HairyCow> extends EntityModel<Type> {
     @Override
     public void setupAnim(Type pEntity, float pLimbSwing, float pLimbSwingAmount, float pAgeInTicks, float pNetHeadYaw, float pHeadPitch) {
 
+
+
     }
 
     @Override
