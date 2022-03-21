@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import net.cursedwarrior.cursedcraft.Item.ModItems;
 import net.cursedwarrior.cursedcraft.block.ModBlocks;
 import net.cursedwarrior.cursedcraft.enchantments.ModEnchantments;
+import net.cursedwarrior.cursedcraft.entity.ModEntities;
 import net.cursedwarrior.cursedcraft.painting.ModPaintings;
 import net.cursedwarrior.cursedcraft.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -33,7 +34,7 @@ public class CursedCraft {
         ModBlocks.register(eventBus);
         ModPaintings.register(eventBus);
         ModEnchantments.register(eventBus);
-
+        ModEntities.register(eventBus);
 
 
         eventBus.addListener(this::setup);
@@ -53,7 +54,6 @@ public class CursedCraft {
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_GLASS.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.TOMATO_PLANT.get(), RenderType.cutout());
-
 
 
         ModItemProperties.addCustomItemProperties();

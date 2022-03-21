@@ -3,11 +3,14 @@ package net.cursedwarrior.cursedcraft.event;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.cursedwarrior.cursedcraft.CursedCraft;
 import net.cursedwarrior.cursedcraft.Item.ModItems;
+import net.cursedwarrior.cursedcraft.entity.ModEntities;
+import net.cursedwarrior.cursedcraft.entity.custom.HairyCow;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,6 +20,10 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = CursedCraft.MOD_ID)
 public class ModEvents {
 
+    @SubscribeEvent
+    public static void registerAttributes(EntityAttributeCreationEvent event) {
+        event.put(ModEntities.HAIRY_COW.get(), HairyCow.createAttributes().build());
+    }
 
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {

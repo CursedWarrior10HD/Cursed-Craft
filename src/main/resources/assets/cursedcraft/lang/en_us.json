@@ -73,7 +73,7 @@
 
   "item.cursedcraft.steel_dowsing_rod.no_valuables": "No Valuable Found!",
   "tooltip.cursedcraft.steel.drowsing.rod.tooltip.shift": "Right-Click to find Valuables",
-  "tooltip.cursedcraft.steel.drowsing.rod.tooltip": "Press §eSHIFT§r for more Information"
+  "tooltip.cursedcraft.steel.drowsing.rod.tooltip": "Press §eSHIFT§r for more Information",
 
-
+  "entity.cursedcraft.hairy_cow": "Hairy Cow"
 }
